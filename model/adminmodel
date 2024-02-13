@@ -1,0 +1,9 @@
+const mongoose=require("mongoose")
+
+const addsecuritySchema=new mongoose.Schema(
+    {
+       
+    }
+)
+
+module.exports=mongoose.model("addsecurity",addsecuritySchema)
