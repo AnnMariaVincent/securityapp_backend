@@ -12,7 +12,14 @@ router.post("/add",async(req,res)=>{
     res.json({
         status:"Success"
     })
+    
 
 })
+
+router.get("/view",async(req,res)=>{
+    let data=await securitymodel.find()
+    res.json(data)
+})
+
     
 module.exports=router
